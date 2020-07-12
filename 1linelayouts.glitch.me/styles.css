@@ -1,0 +1,73 @@
+.parent1 {
+  display: grid;
+  place-items: center;
+
+  background: lightblue;
+  width: 500px;
+  height: 500px;
+}
+
+.child1 {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid red;
+  background: lightpink;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.parent2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background: lightblue;
+  width: 500px;
+  height: 500px;
+}
+
+.child2 {
+  flex: 0 1 300px;  /* items do not stretch */
+  flex: 1 1 300px;  /* itmes will stretch */
+
+  margin: 5px;
+  border: 1px solid red;
+  border-radius: 10px;
+  background: lightpink;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.topic3 .content {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar1 {
+  height: 100vh;
+
+  background: lightpink;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.mainpanel1 {
+  padding: 2rem;
+}
+
+
+
+
+
+
+.resizable {
+  resize: both;
+  overflow: auto;
+}
+
+.resizable-horizontal {
+  resize: horizontal;
+  overflow: auto;
+}
